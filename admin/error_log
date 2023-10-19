@@ -1,0 +1,5 @@
+[19-Sep-2023 15:29:48 UTC] PHP Warning:  Undefined array key "post-type" in /home/biodvldp/public_html/admin/posts.php on line 6
+[19-Sep-2023 15:29:48 UTC] PHP Warning:  Undefined array key "post-type" in /home/biodvldp/public_html/admin/posts.php on line 8
+[19-Sep-2023 15:29:48 UTC] PHP Warning:  Undefined array key "post-type" in /home/biodvldp/public_html/admin/posts.php on line 8
+[19-Sep-2023 15:29:48 UTC] PHP Warning:  Undefined array key "post-type" in /home/biodvldp/public_html/admin/posts.php on line 12
+[19-Sep-2023 17:03:06 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/biodvldp/public_html/back-end/lib/Session.php on line 55
