@@ -8,7 +8,7 @@
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="col-lg-10">
-                <div id="species-profile">
+                <div id="species-profile" class="p-5">
                     <div class="text-center">
                         <div class="spinner-border text-success spinner-border-sm"> </div>
                     </div>

@@ -1,6 +1,5 @@
-
-@media (min-width: 991px){
-  .scroll_menu{
+@media (min-width: 991px) {
+  .scroll_menu {
     position: fixed;
     z-index: 9;
     top: 0;
@@ -9,46 +8,57 @@
     -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
     animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
   }
-  .scroll_menu #main-menu{
-    background-color:transparent;
+  .scroll_menu #main-menu {
+    background-color: transparent;
     box-shadow: none;
   }
-  @keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+  }
 }
 
-@media (max-width: 991px){
-  .main-menu-area .container{
-    padding:0;
+@media (max-width: 991px) {
+  .main-menu-area .container {
+    padding: 0;
   }
   .main-wrapper {
     padding-top: 60px;
   }
-  .mobile_menu{
-    right: 0!important;
+  .mobile_menu {
+    right: 0 !important;
   }
   #main-menu .logo {
     text-align: center;
     width: 100%;
     margin-bottom: 15px;
   }
-  .main-menu-area{
+  .main-menu-area {
     transition: 0.5s;
     position: fixed;
     top: 60px;
     right: -230px;
     z-index: 3;
     width: 230px;
-    background:#fff;
-    border-top:1px solid #eee;
+    background: #fff;
+    border-top: 1px solid #eee;
   }
-  .main-menu-area .logo{
+  .main-menu-area .logo {
     display: none;
   }
   .mobile-header {
     display: flex !important;
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 99;
     background-color: #fff;
@@ -59,7 +69,7 @@
   .mobile-header #toggleMenu {
     position: absolute;
     top: 50%;
-    color: rgba(255, 0, 0, 1);
+    color: #222;
     transform: translateY(-50%);
     right: 15px;
   }
@@ -71,30 +81,30 @@
     display: block;
     box-shadow: 0 2px 11px rgb(0 0 0 / 10%);
   }
-  .navbar-nav{
-    width:100%;
+  .navbar-nav {
+    width: 100%;
   }
   #main-menu .nav-link {
-    padding: 10px 20px!important;
+    padding: 10px 20px !important;
     display: block;
-    transition:0.5s;
+    transition: 0.5s;
     border-bottom: 1px solid #eee;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  #main-menu .nav-link:hover{
-    color:rgba(255, 0, 0, 1)!important;
+  #main-menu .nav-link:hover {
+    color: rgba(255, 0, 0, 1) !important;
   }
-  #main-menu .nav-item.ml-5{
-    margin-left: 0!important;
+  #main-menu .nav-item.ml-5 {
+    margin-left: 0 !important;
   }
-  #main-menu .nav-item:last-child .nav-link{
+  #main-menu .nav-item:last-child .nav-link {
     border-bottom: 0;
   }
 
-  .banner-content{
-    margin:0 15px!important;
+  .banner-content {
+    margin: 0 15px !important;
   }
 
   #banner .owl-nav .owl-prev {
@@ -103,47 +113,48 @@
   #banner .owl-nav .owl-next {
     right: -24px;
   }
-  .banner-text{
+  .banner-text {
     margin-bottom: 15px;
   }
-  .form-element{
+  .form-element {
     margin-bottom: 10px;
   }
-  .search-form{
-    padding:30px!important;
+  .search-form {
+    padding: 30px !important;
   }
 
-  .term-link{
-    text-align: center!important;
+  .term-link {
+    text-align: center !important;
   }
   .term-link li a {
     padding: 0 5px;
   }
-  
-  .single-counter{
+
+  .single-counter {
     width: 100%;
   }
 
-  .about-text, .single-event, .single-footer-content{
+  .about-text,
+  .single-event,
+  .single-footer-content {
     margin-bottom: 30px;
   }
-  .about-text, .help-type{
-    text-align:center;
+  .about-text,
+  .help-type {
+    text-align: center;
   }
-  .single-help-type .icon{
+  .single-help-type .icon {
     margin: 0 auto 15px;
   }
 
-  .copyright, .branding{
-    text-align: center!important;
+  .copyright,
+  .branding {
+    text-align: center !important;
   }
-  .copy{
+  .copy {
     margin-bottom: 15px;
   }
-  .branding{
-    margin-top:15px;
+  .branding {
+    margin-top: 15px;
   }
-
-
 }
-
