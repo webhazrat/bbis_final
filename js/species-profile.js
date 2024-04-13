@@ -206,60 +206,60 @@ $(function () {
             `;
           $("#species-profile").html(html);
 
-          if (result.addition.length) {
-            const mapSelector = document.getElementById("map");
-            mapSelector.style.height = "300px";
-            var script = document.createElement("script");
-            script.src =
-              "https://maps.googleapis.com/maps/api/js?key=AIzaSyB-tOlvcG_X2W_jF_FlU_vGPIRNWtmKOz4&callback=initMap&libraries=places";
-            script.async = true;
+          // if (result.addition.length) {
+          //   const mapSelector = document.getElementById("map");
+          //   mapSelector.style.height = "300px";
+          //   var script = document.createElement("script");
+          //   script.src =
+          //     "https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap&libraries=places";
+          //   script.async = true;
 
-            let centerCoords = result.addition[0].coordination.split(",");
+          //   let centerCoords = result.addition[0].coordination.split(",");
 
-            let map;
-            let activeInfoWindow;
-            function initMap() {
-              map = new google.maps.Map(mapSelector, {
-                center: new google.maps.LatLng(
-                  centerCoords[0],
-                  centerCoords[1]
-                ),
-                zoom: 13,
-                mapTypeId: "hybrid",
-                controlSize: 24,
-              });
-              var bounds = new google.maps.LatLngBounds();
+          //   let map;
+          //   let activeInfoWindow;
+          //   function initMap() {
+          //     map = new google.maps.Map(mapSelector, {
+          //       center: new google.maps.LatLng(
+          //         centerCoords[0],
+          //         centerCoords[1]
+          //       ),
+          //       zoom: 13,
+          //       mapTypeId: "hybrid",
+          //       controlSize: 24,
+          //     });
+          //     var bounds = new google.maps.LatLngBounds();
 
-              result.addition.forEach((item) => {
-                const content = `<h6> ${item.locality}, ${item.districtName}</h6> <strong>Collection Date:</strong> ${item.collectionDate}`;
-                const infoWindow = new google.maps.InfoWindow({
-                  content: content,
-                  maxWidth: 250,
-                });
+          //     result.addition.forEach((item) => {
+          //       const content = `<h6> ${item.locality}, ${item.districtName}</h6> <strong>Collection Date:</strong> ${item.collectionDate}`;
+          //       const infoWindow = new google.maps.InfoWindow({
+          //         content: content,
+          //         maxWidth: 250,
+          //       });
 
-                let coords = item.coordination.split(",");
-                let position = new google.maps.LatLng(coords[0], coords[1]);
-                const marker = new google.maps.Marker({
-                  position,
-                  map,
-                });
-                bounds.extend(position);
+          //       let coords = item.coordination.split(",");
+          //       let position = new google.maps.LatLng(coords[0], coords[1]);
+          //       const marker = new google.maps.Marker({
+          //         position,
+          //         map,
+          //       });
+          //       bounds.extend(position);
 
-                marker.addListener("click", () => {
-                  if (activeInfoWindow) {
-                    activeInfoWindow.close();
-                  }
-                  infoWindow.open(map, marker);
-                  activeInfoWindow = infoWindow;
-                });
-              });
+          //       marker.addListener("click", () => {
+          //         if (activeInfoWindow) {
+          //           activeInfoWindow.close();
+          //         }
+          //         infoWindow.open(map, marker);
+          //         activeInfoWindow = infoWindow;
+          //       });
+          //     });
 
-              map.fitBounds(bounds);
-            }
+          //     map.fitBounds(bounds);
+          //   }
 
-            document.head.appendChild(script);
-            window.initMap = initMap;
-          }
+          //   document.head.appendChild(script);
+          //   window.initMap = initMap;
+          // }
 
           feather.replace();
         } else if (res.status == "204") {
